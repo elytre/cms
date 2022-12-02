@@ -25,6 +25,12 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "contributors": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::contributor.contributor",
+      "inversedBy": "products"
     }
   }
 }

@@ -25,6 +25,12 @@
         "cover artist",
         "photographer"
       ]
+    },
+    "products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::product.product",
+      "inversedBy": "contributors"
     }
   }
 }
